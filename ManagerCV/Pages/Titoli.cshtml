@@ -1,0 +1,23 @@
+﻿@page
+@model ManagerCV.Pages.TitoliModel
+@{
+    ViewData["Title"] = "Titoli";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Descrizione</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        @foreach (var item in Model.Elenco)
+        {
+            <tr>
+                <td><label>@item.Id</label></td>
+                <td><label>@item.Descrizione</label></td>
+            </tr>
+        }
+    </tbody>
+</table>

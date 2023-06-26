@@ -1,0 +1,31 @@
+﻿@page
+@model ManagerCV.Pages.WeatherForecastAPIModel
+
+<form method="post">
+    <input asp-for="Data" asp-format="{0:dd/MM/yyyy}"/>
+    <button>Cerca</button>
+</form>
+<br />
+<br />
+
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Temperature C</th>
+            <th>Temperature F</th>
+            <th>Summary</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Lista)
+        {
+            <tr>
+                <td><label>@item.Date.ToShortDateString()</label></td>
+                <td><label>@item.TemperatureC</label></td>
+                <td><label>@item.TemperatureF</label></td>
+                <td><label>@item.Summary</label></td>
+            </tr>
+        }
+    </tbody>
+</table>

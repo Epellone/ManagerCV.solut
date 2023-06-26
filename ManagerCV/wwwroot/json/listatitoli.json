@@ -1,0 +1,16 @@
+{
+  "ListaTitoli": [
+    {
+      "Id": 1,
+      "Descrizione": "Laurea triennale"
+    },
+    {
+      "Id": 2,
+      "Descrizione": "Master"
+    },
+    {
+      "Id": 3,
+      "Descrizione": "Diploma"
+    }
+  ]
+}

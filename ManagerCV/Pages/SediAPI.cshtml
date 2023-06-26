@@ -1,0 +1,29 @@
+﻿@page
+@model ManagerCV.Pages.SediAPIModel
+@{
+}
+<table>
+    <tr>
+        <th scope="col">Descrizione</th>
+        <th scope="col">Indirirzzo</th>
+        <th scope="col">Città</th>
+        <th scope="col">Provincia</th>
+        <th scope="col">Cap</th>
+        <th scope="col">RecapitoTel</th>
+        <th scope="col">Email</th>
+    </tr>
+    <tbody>
+        @foreach (var item in Model.Lista)
+        {
+            <tr>
+                <td><label>@item.Descrizione</label></td>
+                <td><label>@item.Indirizzo</label></td>
+                <td><label>@item.Città</label></td>
+                <td><label>@item.Provincia</label></td>
+                <td><label>@item.Cap</label></td>
+                <td><label>@item.RecapitoTel</label></td>
+                <td><label>@item.Email</label></td>
+            </tr>
+        }
+    </tbody>
+</table>

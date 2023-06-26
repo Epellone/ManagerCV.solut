@@ -1,0 +1,40 @@
+{
+  "ListaSedi": [
+    {
+      "Descrizione": "Sede Napoli",
+      "Indirizzo": "Centro Direzionale",
+      "Città": "Napoli",
+      "Provincia": "Napoli",
+      "Cap": "80100",
+      "RecapitoTel": "081010293",
+      "Email": "napoli@bcsoft.net"
+    },
+    {
+      "Descrizione": "Sede Roma",
+      "Indirizzo": "Via Roma, 1",
+      "Città": "Roma",
+      "Provincia": "Roma",
+      "Cap": "45555",
+      "RecapitoTel": "061010293",
+      "Email": "roma@bcsoft.net"
+    },
+    {
+      "Descrizione": "Bologna",
+      "Indirizzo": "Via Roma, 1",
+      "Città": "Bologna",
+      "Provincia": "Bologna",
+      "Cap": "22999",
+      "RecapitoTel": "021010293",
+      "Email": "bologna@bcsoft.net"
+    },
+    {
+      "Descrizione": "Firenze",
+      "Indirizzo": "Santa Maria Novella",
+      "Città": "Firenze",
+      "Provincia": "Firenze",
+      "Cap": "28899",
+      "RecapitoTel": "031010293",
+      "Email": "napoli@bcsoft.net"
+    }
+  ]
+}

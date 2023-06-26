@@ -1,0 +1,27 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Benvenuto</h1>
+    <p>Scegli la pagina che vuoi visitare!</p>
+    <div class="btn-group">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" asp-page="/Inseriredati">Inserisci i tuoi dati</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" asp-page="/Sedi">Info Sedi</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" asp-page="/Titoli">Info Titoli di studio</a></li>   
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" asp-page="/WeatherForecastAPI">Info Meteo</a></li> 
+            <li><hr class="dropdown-divider"></li>    
+            <li><a class="dropdown-item" asp-page="/SediAPI">Info API</a></li> 
+            <li><hr class="dropdown-divider"></li>    
+        </ul>
+        </div>
+</div>

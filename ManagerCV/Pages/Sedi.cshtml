@@ -1,0 +1,46 @@
+﻿@page
+@model ManagerCV.Pages.SediModel
+@{
+    ViewData["Title"] = "Sedi";
+}
+
+<table>
+    <tr>
+        <th scope="col">Descrizione</th>
+        <th scope="col">Indirirzzo</th>
+        <th scope="col">Città</th>
+        <th scope="col">Provincia</th>
+        <th scope="col">Cap</th>
+        <th scope="col">RecapitoTel</th>
+        <th scope="col">Email</th>
+    </tr>
+    <tbody>
+        @foreach(var item in Model.Lista)
+        {
+            <tr>
+                <td><label>@item.Descrizione</label></td>
+                <td><label>@item.Indirizzo</label></td>
+                <td><label>@item.Città</label></td>
+                <td><label>@item.Provincia</label></td>
+                <td><label>@item.Cap</label></td>
+                <td><label>@item.RecapitoTel</label></td>
+                <td><label>@item.Email</label></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<form method="post">
+<div class="input-group">
+    <div class="form-outline">
+    <input type="search" asp-for="Descrizione" placeholder="Cerca per Descrizione" /><br>
+    <input type="search" asp-for="Indirizzo" placeholder="Cerca per Indirizzo" /><br />
+    <input type="search" asp-for="Città" placeholder="Cerca per Città" /><br />
+    <input type="search" asp-for="Provincia" placeholder="Cerca per Provincia" /><br />
+    <input type="search" asp-for="Cap" placeholder="Cerca per Cap" /><br />
+    <input type="search" asp-for="RecapitoTel" placeholder="Cerca per Recapito Tel" /><br />
+    <input type="search" asp-for="Email" placeholder="Cerca per Email" /><br />
+    <button>Cerca</button>
+    </div>
+ </div>
+</form>
